@@ -5,7 +5,7 @@ test.beforeEach(async ({ loginPage }) => {
   await loginPage.login(process.env.TEST_USERNAME!, process.env.TEST_PASSWORD!);
 });
 
-test('secure area success message is visible after login', async ({ page }) => {
+test('secure area success message is visible after login test', async ({ page }) => {
   await expect(page.getByText('You logged into a secure area!')).toBeVisible();
 });
 
